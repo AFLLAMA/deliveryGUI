@@ -1,0 +1,28 @@
+<div class="card my-5">
+  <div class="card-body">
+
+    <div >Catalogues:
+    <li *ngFor="let catalogue of catalogues; index as i">
+
+      <button (click)="showCatalogue(i)">{{ catalogue.name }}</button>
+
+    </li>
+    </div>
+    <div>Companies:
+      <li *ngFor="let company of coms; index as i">
+
+        <button (click)="showCompany(i)"> {{company.name}} </button>
+
+      </li>
+    </div>
+    <div>Add products to order:
+      <!-- <li *ngFor="let product of products; index as i">
+
+        <button (click)="addToOrder(i)"> {{product.name}} </button>
+
+      </li> -->
+    </div>
+
+    <!-- <app-company-list [message]="parentMessage"></app-company-list> -->
+  </div>
+</div>
